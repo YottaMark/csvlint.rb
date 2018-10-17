@@ -301,7 +301,8 @@ module Csvlint
           "skipInitialSpace" => true,
           "lineTerminator" => :auto,
           "quoteChar" => '"',
-          "trim" => :true
+          "trim" => :true,
+          "skipBlanks" => :true
       }.merge(schema_dialect).merge(@dialect || {})
 
       @csv_header = @csv_header && @dialect["header"]
