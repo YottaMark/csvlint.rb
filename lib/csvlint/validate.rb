@@ -383,7 +383,7 @@ module Csvlint
           :col_sep => delimiter,
           :row_sep => dialect["lineTerminator"],
           :quote_char => dialect["quoteChar"],
-          :skip_blanks => false
+          :skip_blanks => true
       }
     end
 
